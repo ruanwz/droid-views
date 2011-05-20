@@ -30,7 +30,7 @@ correct_xml_for_main = <<-END
 </LinearLayout>
 END
 
-describe 'DroidView#render' do
+describe 'DroidView.render' do
 
   it "should create correct XML" do
     Main.render.should == correct_xml_for_main

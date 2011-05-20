@@ -54,7 +54,6 @@ class DroidView
     doc.encoding = "UTF-8"
     result = @@root.describe(doc)
     @@root = nil
-    puts result
     result.to_s
   end
 
