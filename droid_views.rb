@@ -6,9 +6,12 @@ class DroidView
   CLASS_TYPES = {
     'linear_layout'   => 'LinearLayout',
     'text_view'       => 'TextView',
+    'scroll_view'       => 'ScrollView',
+    'horizontal_scroll_view'       => 'HorizontalScrollView',
     'relative_layout' => 'RelativeLayout',
     'image_view'      => 'ImageView',
-    'button'          => 'Button'
+    'button'          => 'Button',
+    'edit_text'          => 'EditText'
   }
 
   ATTRIBUTES = {
@@ -23,13 +26,19 @@ class DroidView
     'layout_align_parent_left'            => 'layout_alignParentLeft',
     'layout_align_parent_right'           => 'layout_alignParentLeft',
     'layout_margin_right'                 => 'layout_marginRight',
+    'layout_margin_left'                  => 'layout_marginLeft',
+    'layout_margin_top'                   => 'layout_marginTop',
     'layout_to_right_of'                  => 'layout_toRightOf',
     'layout_align_with_parent_if_missing' => 'layout_alignWithParentIfMissing',
     'layout_above'                        => 'layout_above',
+    'layout_gravity'                      => 'layout_gravity',
+    'layout_weight'                       => 'layout_weight',
     'single_line'                         => 'singleLine',
     'ellipsize'                           => 'ellipsize',
     'text_color'                          => 'textColor',
     'gravity'                             => 'gravity',
+    'input_type'                          => 'inputType',
+    'hint'                                => 'hint'
   }
 
   CLASS_TYPES.each { |shortcut, actual|
